@@ -1,0 +1,143 @@
+# **:triangular_flag_on_post: {{uppercase name}}** (version {{version}})
+
+{{#if engines}}
+{{#each engines}}
+![{{@key}} version](https://img.shields.io/badge/{{@key}}-{{{removeAllSpaces this}}}-brightgreen.svg)
+{{/each}}
+{{/if}}
+
+{{#if description}}
+> {{{description}}}
+{{/if}}
+
+---
+
+{{#if dependencies}}
+## **:package: Main tools used**
+
+{{#each dependencies}}
+- [x] {{@key}}
+{{/each}}
+{{#each frameworks}}
+- [x] {{this}}
+{{/each}}
+
+---
+{{/if}}
+
+## **:wrench: Developer usage**
+
+### **Set up project**
+
+{{#if engines}}
+Before cloning the repo **be sure** you have installed:
+
+{{> engines}}
+
+Then:
+
+{{/if}}
+- Choose a folder project in your system and switch in `cd [folder path]`
+- Clone the repo in your folder path{{#if repository.url}} `git clone {{{repository.url}}}`{{/if}}
+
+---
+
+### **Installation**
+
+In order to install the project and all dependencies, enter in the project folder and run `{{manager}} install`
+
+---
+
+{{#if commands}}
+{{#each commands}}
+### {{capitalize @key}} the project
+
+```bash
+{{../manager}} {{this}}
+```
+
+{{/each}}
+---
+{{/if}}
+
+{{#if formatters}}
+### **Editor setup**
+
+To keep consistency to the style of resources, I decided to stick to some shared rules that have to be applied to every
+project using some editors plugins. Plese be sure to disable / remove any other linters or custom configurations.
+
+I have chosen to use
+
+{{#each formatters}}
+- [{{uppercase this}}](https://www.google.com/search?q={{lowercase this}})
+{{/each}}
+
+This
+works including a specific `.dotfile` in the root directory and making sure your editor has the necessary plugin.
+
+---
+{{/if}}
+
+## **:handshake: Contributing**
+
+- Fork it!
+- Create your feature branch: `git checkout -b my-new-feature`
+- Commit your changes: `git commit -am 'Add some feature'`
+- Push to the branch: `git push origin my-new-feature`
+- Submit a pull request
+
+---
+
+{{#if contributors}}
+### **:busts_in_silhouette: Credits**
+
+{{#each contributors}}
+- [{{name}}]({{{url}}}) ({{reason}})
+{{/each}}
+
+---
+{{/if}}
+
+{{#if purpose}}
+### **:anger: Troubleshootings**
+
+This is just a personal project created for study / demonstration purpose and to simplify my working life, it may or may
+not be a good fit for your project(s).
+
+---
+{{/if}}
+
+### **:heart: Show your support**
+
+Please :star: this repository if you like it or this project helped you!\
+Feel free to open issues or submit pull-requests to help me improving my work.
+
+{{#if support}}
+<a href="https://www.patreon.com/{{support.patreon}}" target="_blank">
+  <img alt="Patron logo" src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="150px"/>
+</a>
+{{/if}}
+
+---
+
+### **:scroll: Release history**
+
+* {{version}}
+    * Work in progress
+
+---
+
+{{#if author}}
+### **:robot: Author**
+
+_*{{author.name}}*_
+
+{{#if author.social}}
+> You can follow me on
+{{#each author.social~}}{{#unless @last}}[{{@key}}]({{{this}}})&nbsp;&middot;&nbsp;{{/unless}}{{#if @last}}[{{@key}}]({{{this}}}){{/if}}{{~/each}}
+{{/if}}
+
+---
+{{/if}}
+
+Copyright © {{getYear}} {{#if author}}[{{author.name}}]({{author.url}}).{{/if}}
