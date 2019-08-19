@@ -1,4 +1,4 @@
-# **:triangular_flag_on_post: TEMPLATES FOR README-GENERATOR** (version 0.0.1)
+# **:triangular_flag_on_post: TEMPLATES FOR README-GENERATOR**
 
 ![project version](https://img.shields.io/badge/project-0.0.1-brightgreen.svg)
 ![readme-generator version](https://img.shields.io/badge/readme_generator-0.0.1-brightgreen.svg)
