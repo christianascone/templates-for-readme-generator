@@ -72,5 +72,5 @@ _*Christian Ascone*_
 
 ---
 
-Copyright © 2019 [Christian Ascone](https://github.com/christianascone).
+Copyright © 2019 [Christian Ascone](https://github.com/christianascone).\
 This project is covered by [MIT](https://github.com/christianascone/templates-for-readme-generator/blob/master/LICENSE) license.
