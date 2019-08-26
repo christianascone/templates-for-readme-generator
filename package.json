@@ -1,0 +1,41 @@
+{
+  "name": "Project template",
+  "version": "0.0.1",
+  "description": "My project example",
+  "main": "./src/index.js",
+  "bin": {
+    "readme-generator": "./dist/index.js"
+  },
+  "homepage": "https://github.com/christianascone/project-template",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/christianascone/project-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/christianascone/project-template/issues",
+    "email": "ascone.christian@gmail.com"
+  },
+  "author": {
+    "name": "Christian Ascone",
+    "email": "ascone.christian@gmail.com",
+    "url": "https://github.com/christianascone",
+    "social": {
+      "GitHub": "https://github.com/christianascone",
+      "GitLab": "https://gitlab.com/christianascone"
+    }
+  },
+  "contributors": [
+  ],
+  "keywords": [
+  ],
+  "engines": {
+    "project": "0.0.1",
+    "node": ">= 8.9.x",
+    "yarn": ">= 1.9.x",
+    "npm": ">= 6.3.x"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "tool": "^4.1.0"
+  }
+}
